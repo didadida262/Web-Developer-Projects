@@ -1,0 +1,174 @@
+
+body{
+	background-color: #595959;
+
+}
+
+#BayMax{
+	margin: 0 auto;
+	height: 600px;
+	overflow: hidden;
+}
+
+#head{
+	margin: 0 auto;
+	background-color: #fff;
+	width: 100px;
+	height: 64px;
+	border-radius: 50%;
+	margin-bottom: -20px;
+	border-bottom: 5px solid #e0e0e0;
+	z-index:100;
+	position: relative;
+}
+
+
+#eye1,#eye2{
+	background-color: #282828;
+	width: 11px;
+	height: 13px;
+	position: relative;
+	border-radius: 50%;
+	transform: rotate(8deg);
+	top: 30px;
+	left: 27px;
+}
+
+#eye2{
+	top: 17px;
+	left: 62px;
+	transform: rotate(-8deg);
+}
+
+#mouth{
+	width: 38px;
+	height: 1.5px;
+	position: relative;
+	top: 10.5px;
+	left: 34px;
+	background-color: #282828;
+
+}
+
+#torse,#belly{
+	height: 200px;
+	width: 180px;
+	background-color: #fff;
+	border: 5px solid #e0e0e0;
+	border-radius: 47%;
+	margin: 0 auto;
+	border-top: none;
+	z-index: 1;
+}
+
+#heart{
+	background-color: #fff;
+	position: relative;
+	top: 60px;
+	left: 120px;
+	width: 25px;
+	height: 25px;
+	z-index: 7;
+	border-radius:50%;
+	border: 1px solid #ccc;
+	box-shadow: 2px 5px 2px #ccc inset;
+}
+
+
+
+#belly{
+	width: 245px;
+	height: 300px;
+	z-index: 5;
+	margin-top:-140px;
+}
+
+#cover {
+    width: 190px;
+    background: #fff;
+    height: 150px;
+    margin: 0 auto;
+    position: relative;
+    top: -20px;
+    border-radius: 50%;
+    z-index: 6;
+}
+
+#leftarm,#rightarm{
+	width: 120px;
+	height:270px;
+	position: relative;
+	background-color: #fff;
+	border-radius: 50%;
+	margin: 0 auto;
+	top: -350px;
+	left: -100px;
+	transform: rotate(20deg);
+	z-index: -1;
+
+}
+
+#rightarm{
+	transform: rotate(-20deg);
+	left: 100px;
+	top: -620px;
+}
+
+#l-bigfinger,
+#r-bigfinger {
+    height: 50px;
+    width: 20px;
+    border-radius: 50%;
+    background: #fff;
+    position: relative;
+    top: 250px;
+    left: 50px;
+    transform: rotate(-50deg);
+}
+
+#r-bigfinger {
+    left: 50px;
+    transform: rotate(50deg);
+}
+
+#l-smallfinger,
+#r-smallfinger {
+    height: 35px;
+    width: 15px;
+    border-radius: 50%;
+    background: #fff;
+    position: relative;
+    top: 195px;
+    left: 66px;
+    transform: rotate(-40deg);
+}
+
+#r-smallfinger {
+    background: #fff;
+    transform: rotate(40deg);
+    top: 195px;
+    left: 37px;
+}
+
+
+#leftleg,#rightleg {
+    height: 170px;
+    width: 90px;
+    border-radius: 40% 30% 10px 45%;
+    background: #fff;
+    position: relative;
+    top: -640px;
+    left: -45px;
+    transform: rotate(-1deg);
+    z-index: -2;
+    margin: 0 auto;
+}
+
+#rightleg {
+    background: #fff;
+    border-radius:30% 40% 45% 10px;
+    margin: 0 auto;
+    top: -810px;
+    left: 50px;
+    transform: rotate(1deg);
+}
