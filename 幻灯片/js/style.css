@@ -1,0 +1,78 @@
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
+.box{
+	position: relative;
+}
+
+.slide-con{
+	width: 400px;
+	height: 300px;
+	position: relative;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+ul{
+	list-style: none;
+	padding:0;
+	margin: 0;
+}
+
+.slide li{
+		display: inline-block;
+		width: 400px;
+		height: 300px;
+		position: absolute;
+		left: 
+
+}
+
+.prev{
+	position: absolute;
+	transform: rotate(180deg);
+	top: 106PX;
+	cursor: pointer;
+	left: 372px;
+	width: 102px;
+	height: 74px;
+
+	
+}
+
+.next{
+	position: absolute;
+	top: 123px;
+	left: 891px;
+	cursor: pointer;
+	width: 102px;
+	height: 74px;
+}
+
+.points{
+	position: absolute;
+	bottom: 9px;
+	width: 400px;
+	height: 11px;
+	text-align: center;
+	font-size: 0;
+}
+
+.points li{
+	display: inline-block;
+	width: 11px;
+	border-radius: 50%;
+	margin-right: 9px;
+	height: 11px;
+	background-color: gray;
+	cursor: pointer;
+
+}
+
+
+.points .active{
+	background-color: #cecece;
+}
