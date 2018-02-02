@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js打造下拉菜单</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+
+		.menu{
+			background-color: rgb(238, 238, 238);
+			width: 500px;
+			height: 40px;
+			margin: 0 auto;
+		}
+		
+		ul{
+			list-style: none;
+		}
+		li{
+			float: left;
+			width: 100px;
+			height: 40px;
+			text-align: center;
+			position: relative;
+
+		}
+
+		ul li ul li{
+			float: none;
+			margin-top: 5px;
+		}
+
+		a{
+			text-decoration: none;
+			display: inline-block;
+			font-family: 'Microsoft Yahei';
+			width: 100px;
+			line-height: 40px;
+			color: black;
+			background-color: rgb(238, 238, 238);
+		}
+		a:hover{
+			color: white;
+			background-color: rgb(102, 102, 102);
+		}
+		ul li ul{
+			position: absolute;
+			left: 0;
+			top: 40px;
+			display: none;
+		}
+
+
+
+	</style>
+</head>
+<body>
+	<div class="menu">
+		<ul>
+			<li><a href="#">首页</a></li>
+			<li onmouseover="show(this)" onmouseout="hide(this)"><a href="#">学堂在线</a>
+				<ul>
+					<li><a href="#">Javascript</a></li>
+					<li><a href="#">HTML</a></li>
+					<li><a href="#">CSS</a></li>
+				</ul>
+			</li>
+			<li onmouseover="show(this)" onmouseout="hide(this)"><a href="#">网易公开课</a>
+				<ul>
+					<li><a href="#">哲学</a></li>
+					<li><a href="#">政治</a></li>
+					<li><a href="#">历史</a></li>
+				</ul>
+			</li>
+			<li><a href="#">中国大学</a></li>
+			<li><a href="#">关于我们</a></li>
+		</ul>
+	</div>
+
+	<script>
+		function show(li){
+			var showul = li.getElementsByTagName("ul")[0];
+			showul.style.display ="block";
+		}
+
+		function hide(li){
+			var hideul = li.getElementsByTagName("ul")[0];
+			hideul.style.display = "none";
+		}
+	</script>
+</body>
+</html>

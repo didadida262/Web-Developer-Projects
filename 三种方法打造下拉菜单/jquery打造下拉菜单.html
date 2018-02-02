@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		
+		.menu{
+			width: 500px;
+			height: 40px;
+			background-color: rgb(238, 238, 238);
+			margin: 0 auto;
+		}
+
+
+		ul{
+			list-style: none;
+		}
+		
+		li{
+			text-align: center;
+			position: relative;
+			float: left;
+
+		}
+		
+		a{
+			text-decoration: none;
+			width: 100px;
+			line-height: 40px;
+			display: inline-block;
+			color: black;
+			background-color: rgb(238, 238, 238);
+		}
+		a:hover{
+			color: white;
+			background-color: rgb(102, 102, 102);
+		}
+		
+		ul li ul li{
+			float: none;
+			margin-top: 5px;
+		}
+		ul li:hover ul{
+			position: absolute;
+			top: 40px;
+			left: 0;
+			
+		}
+
+		ul li ul{
+			display: none;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="menu">
+		<ul>
+			<li><a href="#">首页</a></li>
+			<li class="nav"><a href="#">首页</a>
+				<ul>
+					<li><a href="#">js</a></li>
+					<li><a href="#">js</a></li>
+					<li><a href="#">js</a></li>
+				</ul>
+			</li>
+			<li class="nav"><a href="#">首页</a>
+				<ul>
+					<li><a href="#">js</a></li>
+					<li><a href="#">js</a></li>
+					<li><a href="#">js</a></li>
+				</ul>
+			</li>
+			<li><a href="#">首页</a></li>
+			<li><a href="#">树叶</a></li>
+		</ul>
+	</div>
+	<script src="./jquery-2.2.3.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$(".nav").mouseover(function(){
+				$(this).children("ul").show();
+			});
+		})
+		$(function(){
+			$(".nav").mouseout(function(){
+				$(this).children("ul").hide();
+			});
+		})
+		
+	</script>
+	
+</body>
+</html>
